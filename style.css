@@ -69,6 +69,7 @@ a {
 	font-size: 80px;
 	top: 100px;
 	left: 100px;
+	-webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
 .text-right {
