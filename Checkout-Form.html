@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="checkoutform.css">
+</head>
+<body>
+<header>
+  <nav>
+    <div class="topnav">
+      <div class="nav-left">Roen Mini Store </div>
+      <div class="nav-right">
+      <input type="text"placeholder="Search..">
+      <button class="search-button">Search</button></div>
+    </div>
+  </nav>
+  </header>
+  <main>
+  <section>
+      <div class="availflex">
+        <div class="avail-left"> Check Out Form</div>
+      </div>
+  </section>
+
+  <section class="container">
+    <form action="/action_page.php">
+      <div class="form-grid">
+        <div class="form"><p>Personal Information:</p><br>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="address">Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+            <label for="region">Region:</label><br>
+            <input type="text" id="region" name="region"><br>
+            <label for="contact">Contact Number:</label><br>
+            <input type="text" id="contact" name="contact">
+
+            <p>Payment Method:</p>
+            <input type="radio" id="cod" name="payment-method" value="Cash On Delivery">
+            <label for="cod">Cash On Delivery</label><br>
+            <input type="radio" id="mcpayment"name="payment-method" value="Mastecard Payment">
+            <label for="cod">Master Card Payment</label><br>
+            <input type="radio" id="gcash" name="payment-method"value="G-Cash Payment">
+            <label for="cod">G-Cash Payment</label><br>
+            <input type="radio" id="maya" name="payment-method"value="Maya Payment">
+            <label for="cod">Maya Payment</label><br>
+          
+            <input class="submit" type="submit" value="Submit">
+            <input class="reset" type="reset">
+          
+        </div>
+
+        <!--  Shopping cart table wrapper  -->
+		<div id="shopping-cart">
+			<div class="txt-heading">
+				<h1>Shopping Cart</h1>
+        <a id="btnRem" href="index.html">HOME</a>
+			</div>
+			
+			<!-- <a onClick="emptyCart()" id="btnEmpty">Empty Cart</a> -->
+			<table class="tbl-cart" cellpadding="10" cellspacing="1">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th class='text-right' width="20%">Unit Price</th>
+						<th class='text-right' width="5%">Quantity</th>
+						<th class='text-right' width="20%">Sub Total</th>
+					</tr>
+				</thead>
+				<!--  Cart table to load data on "add to cart" action -->
+				<tbody id="cartTableBody">
+				</tbody>
+				<tfoot>
+					<tr>
+						<td class="text-right"style="background-color: #E0E0E0; color: green; font-size: 16px;">Total:</td>
+						<td id="itemCount" class="text-right" colspan="2"style="background-color: #E0E0E0; color: green; font-size: 16px;"></td>
+						<td id="totalAmount" class="text-right"style="background-color: #E0E0E0; color: green; font-size: 16px;"></td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</div>
+  </form>
+  </div>
+  </section>
+  
+  <script src="cart.js"></script>
+</body>
+</html>

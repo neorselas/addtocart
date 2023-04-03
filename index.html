@@ -11,9 +11,11 @@
 <body>
 
 	<nav>
-		<div class="navigation">
-			<h3>Roen Mini Store</h3>
-			<!-- <h3></h3> -->
+		<div class="topnav">
+		  <div class="nav-left">Roen Mini Store </div>
+		  <div class="nav-right">
+		  <input type="text"placeholder="Search..">
+		  <button class="search-button">Search</button></div>
 		</div>
 	  </nav>
 	  
@@ -40,7 +42,7 @@
 			<div class="txt-heading">
 				<h1>Shopping Cart</h1>
 			</div>
-			<a onClick="removeCartItem()" id="btnRem">CheckOut</a>
+			<a id="btnRem" href="Checkout-Form.html">CheckOut</a>
 			<a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
 			<table class="tbl-cart" cellpadding="10" cellspacing="1">
 				<thead>
