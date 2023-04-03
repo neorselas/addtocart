@@ -156,3 +156,126 @@ span.price {
   float: right;
   color: rgb(0, 0, 0);
 }
+
+
+/* FOOTER */
+
+
+
+footer {
+	margin-top: 30px;
+	color: #000000;
+	background-color: #c5c7ca;
+	/* position: fixed; */
+	bottom: 0;
+  }
+  
+  .row {
+	display: flex;
+	padding: 1rem;
+  }
+  
+  .column {
+	width: calc(100% / 3);
+	padding: 0 0.9375rem;
+  }
+  
+  h4 {
+	margin-bottom: 0.9375rem;
+	font-size: 1.5rem;
+  }
+  
+  p {
+	font-size: 1rem;
+	line-height: 1.3rem;
+  }
+  
+  ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  ul li {
+	margin-bottom: 0.625rem;
+  }
+  
+  ul li a {
+	color: #333;
+	font-size: 1rem;
+  }
+  
+  ul li i {
+	color: #000000;
+  }
+  
+  ul li a:hover {
+	color: #011129;
+  }
+  
+  ul.social-icons {
+	display: flex;
+	column-gap: 0.625rem;
+  }
+  
+  .social-icons i {
+	color: rgb(0, 0, 0);
+  }
+  
+  ul.social-icons li {
+	margin-bottom: 0rem;
+  }
+  
+  ul.social-icons li a {
+	display: grid;
+	place-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 100%;
+	background-color: #b2b6bb;
+  }
+  
+  ul.social-icons li:hover a {
+	background-color: #6fdeff;
+	color:#000000;
+  }
+  
+  .copyright {
+	text-align: center;
+	color: #fff;
+	background-color: rgb(1, 41, 5);
+	padding: 0.6rem 0;
+  }
+  
+  /* Responsive adjustments */
+  
+  @media screen and (max-width: 768px) {
+	.column {
+	  margin: 0.4rem 0;
+	  width: 100%;
+	  padding: 0;
+	}
+  
+	.row {
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+  
+	h4 {
+	  font-size: 1.3125rem;
+	}
+  
+	p {
+	  font-size: 0.9375rem;
+	}
+  
+	ul li a {
+	  font-size: 0.9375rem;
+	}
+  
+	ul.social-icons li a {
+	  width: 1.875rem;
+	  height: 1.875rem;
+	}
+  }
+  
